@@ -1,0 +1,106 @@
+/* Activity Page */
+.activity-container {
+    padding: 20px;
+    background-color: #f8f9fc;
+    font-family: "Arial", sans-serif;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .activity-header {
+    font-size: 2rem;
+    text-align: center;
+    color: #563d7c;
+    margin-bottom: 20px;
+  }
+  
+  /* Create Quiz Section */
+  .create-quiz-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .create-quiz-section input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    outline: none;
+  }
+  
+  .create-quiz-section button {
+    background-color: #563d7c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .create-quiz-section button:hover {
+    background-color: #432c63;
+    transform: scale(1.05);
+  }
+  
+  /* Quiz List */
+  .quiz-list {
+    margin-bottom: 30px;
+  }
+  
+  .quiz-list h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .quiz-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Group Activity */
+  .group-activity-section h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .group-activity-item {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .group-activity-item strong {
+    color: #563d7c;
+  }
+  
+  @media (max-width: 768px) {
+    .create-quiz-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .create-quiz-section input {
+      width: 100%;
+    }
+  
+    .quiz-item,
+    .group-activity-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
